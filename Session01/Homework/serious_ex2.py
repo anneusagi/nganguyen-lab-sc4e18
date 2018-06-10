@@ -9,9 +9,9 @@ db = client.get_default_database()
 posts = db['posts']
 
 new_post = {
-    "title": "Dream, Hope and Love",
+    "title": "What I think about c4e18 classs?",
     "author": "Nga Nguyễn",
-    "content": "Life ends when you stop dreaming, hope ends when you stop believing and love ends when you stop caring. So dream hope and love"
+    "content": "I feel very pleased with this class. Teachers are so enthusiastic and friendly "
 }
 
 posts.insert_one(new_post)
