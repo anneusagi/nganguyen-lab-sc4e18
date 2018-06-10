@@ -1,5 +1,6 @@
-from gmail import choice *
-from gmail import 
+from gmail import *
+from random import choice
+import datetime 
 
 html_content = """
 <p style="text-align: center;">Cộng H&ograve;a X&atilde; Hội Chủ Nghĩa Việt Nam</p>
@@ -16,11 +17,13 @@ html_content = """
 """
 
 reasons = ["too busy","sick","too difficult","need more time to figure it out"]
-
 replace = choice(reasons)
-
 html_content_to_send = html_content.replace("{{sickness}}",replace)
 
+now = datetime.datetime.now()
+time = now.hour
 
-msg = Message('NgaNguyen','20130075@student.hust.edu.vn',html=html_content_to_send)
-gmail.send(msg)
+msg = Message('NgaNguyen','annedev165@gmail.com',html=html_content_to_send)
+
+if time >7:
+    gmail.send(msg)
