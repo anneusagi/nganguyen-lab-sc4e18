@@ -9,7 +9,7 @@ db = client.get_default_database()
 posts = db['posts']
 
 new_post = {
-    "title": "What I think about c4e18 classs?",
+    "title": "What I think about c4e18 class?",
     "author": "Nga Nguyễn",
     "content": "I feel very pleased with this class. Teachers are so enthusiastic and friendly "
 }
