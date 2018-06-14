@@ -32,4 +32,4 @@ for li in li_list:
     dl.download([download])
 
 
-save_as(records=list_of_songs, dest_file_name="itunes_top.xlsx")
+save_as(records=list_of_songs, dest_file_name="itunes_top.xls")
