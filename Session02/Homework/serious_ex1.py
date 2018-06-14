@@ -5,9 +5,7 @@ from youtube_dl import YoutubeDL
 
 url = "https://www.apple.com/itunes/charts/songs"
 
-conn = urlopen(url)
-data = conn.read()
-html_content = data.decode("utf-8")
+html_content = urlopen(url).read().decode("utf-8")
 
 soup = BeautifulSoup(html_content, "html.parser")
 sec = soup.find("section","section chart-grid")
