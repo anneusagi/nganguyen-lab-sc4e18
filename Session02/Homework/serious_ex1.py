@@ -27,7 +27,7 @@ for li in li_list:
     
     list_of_songs.append(dic_songs)
     
-    download = ""
+    
     download = h3.string + " " + h4.string
     dl.download([download])
 
