@@ -9,3 +9,5 @@ html_content = urlopen(url).read().decode("utf-8")
 soup = BeautifulSoup(html_content, "html.parser")
 table = soup.find("table",id = "tableContent")
 
+li_list = ul.find_all("td", "b_r_c")
+
