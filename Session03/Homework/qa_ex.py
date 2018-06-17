@@ -6,6 +6,7 @@ How to define/declare a function?
    function_suite
    return [expression]
 How to call/use a function?
+- 
 What is return, why and how do we use it?
 Do we have to use return in every function?
 What are function arguments/parameters, why and how we use it?
